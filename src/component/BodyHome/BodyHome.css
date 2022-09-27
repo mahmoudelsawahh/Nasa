@@ -1,0 +1,22 @@
+.headerImg span{
+    margin: 0px 20px;
+}
+.parent{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.parent h2{
+    cursor: pointer;
+}
+.borderBottom{
+    border-bottom: 3px solid #fff;
+}
+
+@media (max-width: 1200px) { 
+    .headerImg{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+ }

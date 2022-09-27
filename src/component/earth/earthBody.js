@@ -1,5 +1,5 @@
 import './earthBody.css'
-import { Box, Button, createTheme, Typography } from '@mui/material';
+import { Box, Button } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
 import { Link } from 'react-router-dom';

@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import React, { useEffect, useState } from 'react'
 import BodyHome from '../../component/BodyHome/BodyHome';
 import Layout from '../../component/layout';
 
