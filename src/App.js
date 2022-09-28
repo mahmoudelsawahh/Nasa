@@ -12,7 +12,6 @@ import Home from './pages/Home/home';
       <Route path='/' element={<LoadingPage/>}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/main' element={<Main/>}/>
-
      </Routes>
     </>
   )
