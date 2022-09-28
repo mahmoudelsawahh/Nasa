@@ -8,7 +8,7 @@ import { OrbitControls, Stars } from '@react-three/drei';
     const earthRef = useRef();
     useFrame(({clock})=>{
         const elapsedTime = clock.getElapsedTime();
-      earthRef.current.rotation.y = elapsedTime /6
+      earthRef.current.rotation.y = elapsedTime /18
 
     },)
   return (

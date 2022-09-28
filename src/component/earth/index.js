@@ -22,7 +22,7 @@ import { OrbitControls, Stars } from '@react-three/drei';
     <>
         <ambientLight intensity={0.1}/>
         <pointLight color={'#f6f3ea'} position={[2 , 0 , 5]} intensity={1.2}/>
-        <Stars radius={300} depth={60} count={20000} factor={8} saturation={0} fade={true}/>
+        {/* <Stars radius={300} depth={60} count={20000} factor={8} saturation={0} fade={true}/> */}
         <mesh ref={cloudRef}  position={[0, 0 , 3]}>
             <sphereGeometry args={[1.005, 32, 32]} />
             <meshPhongMaterial map={cloudsMap} opacity={0.4} depthWrite={true} transparent={true} side={THREE.DoubleSide}/>

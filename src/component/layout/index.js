@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 
  const Layout = () => {
   return (
-    <Box sx={{width : '100%' , height : '100vh' , backgroundColor : '#07073a' , position : 'absolute' }}>
+    <Box sx={{width : '100%' , height : '100vh' , backgroundColor : '#000' , position : 'absolute' }}>
       <Navbar/>
       <Canvas>
         <Suspense fallback={null}>
