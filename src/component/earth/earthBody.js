@@ -30,8 +30,7 @@ const useStyles = makeStyles({
         state ever by donating to help fix our only world and our beloved
         </p>
         <Link to={'/home'}>
-        <Button variant='contained' color='success' sx={{marginTop : '3em' , fontSize : '16px' ,
-         fontWeight : 500, padding: '8px 14px' , "&:hover" : {backgroundColor : 'transparent' , border : '1px solid #2ee77e'}}}>Get Start</Button>
+        <Button variant='outlined'  size="medium">Get Start</Button>
         </Link>
     </Box>
     </div>

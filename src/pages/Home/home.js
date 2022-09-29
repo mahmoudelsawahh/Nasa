@@ -5,9 +5,8 @@ import Layout from '../../component/layout';
  const Home = () => {
 
   return (
-     <Box sx={{height : '100vh'}}>
+     <Box>
           <Layout/>        
-          <BodyHome/> 
 
      </Box>
   )

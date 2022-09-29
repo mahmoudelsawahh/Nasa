@@ -14,13 +14,14 @@ import { OrbitControls, Stars } from '@react-three/drei';
   return (
     <>
         <ambientLight intensity={0.1}/>
-        <pointLight color={'#f6f3ea'} position={[2 , 0 , 5]} intensity={1.2}/>
-        <Stars radius={300} depth={60} count={20000} factor={8} saturation={0} fade={true}/>
+        <pointLight color={'#f6f3ea'} position={[40 , 0 , 5]} intensity={1.2}/>
 
-        <mesh ref={earthRef} position={[ 0, 0, 3]}>
-        <sphereGeometry args={[1, 32, 32]}/>
+        <Stars radius={1000} depth={60} count={2000} factor={8} saturation={0} fade={true}/>
+
+        <mesh ref={earthRef} position={[ 0, 0, 0]}>
+        <sphereGeometry args={[2.5, 32, 32]}/>
         <meshStandardMaterial map={colorMap}  metalness={0.4} roughness={0.7}/>
-        <OrbitControls enableZoom={true} enablePan={true} enableRotate={true} zoomSpeed={0.6} panSpeed={0.5} rotateSpeed={0.4}/>
+        <OrbitControls enableZoom={false} enablePan={true} enableRotate={true} zoomSpeed={0.6} panSpeed={0.5} rotateSpeed={0.4}/>
         </mesh>
     </>
   )

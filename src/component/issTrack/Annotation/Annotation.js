@@ -6,7 +6,7 @@ import { Box, Typography } from "@mui/material";
       <div
       style={{
         position: 'absolute',
-        top: 0,
+        top: 70,
         left: 0,
         zIndex: 1,
         marginLeft: 15,

@@ -147,7 +147,7 @@ const Template = () => {
           <section
           style={{
             position: 'absolute',
-            top: 0,
+            top: 70,
             right: 0,
             zIndex: 1,
             marginRight: 15,

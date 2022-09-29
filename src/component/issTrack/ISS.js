@@ -1,11 +1,13 @@
+import Navbar from '../layout/Navbar';
 import {  Annotation, Loading, Template } from './index';
 import { useLoading } from './lib/loading';
 
-function Main() {
+function ISS() {
   const loading = useLoading();
 
   return (
     <>
+        <Navbar/>
       <Loading visible={loading.loading} />
       <Template />
       {!loading.loading && <Annotation />}
@@ -13,4 +15,4 @@ function Main() {
   );
 }
 
-export default Main;
+export default ISS;
