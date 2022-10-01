@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import BodyHome from '../../component/BodyHome/BodyHome';
 import Layout from '../../component/layout';
 
  const Home = () => {

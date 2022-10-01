@@ -1,21 +1,30 @@
-import { Box } from '@mui/material';
-import { Canvas } from '@react-three/fiber';
-import React, { Suspense } from 'react'
-import Earth from './component/earth';
-import EarthBody from './component/earth/earthBody';
-import './loadingPage.css' ;
+import styled from "styled-components";
+import { Canvas } from "@react-three/fiber";
+import { Suspense } from "react";
+import { Earth } from "./component/earth";
+import { TopSection } from "./component/earth/topSection";
+import { Box } from "@mui/material";
 
-// 07073a
- const LoadingPage = () => {
+const CanvasContainer = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+function App() {
+    
   return (
-    <Box sx={{width: '100% ', height : '100vh' , backgroundColor : '#000' }}>
-      <EarthBody/>
+  <div>
+       <Box sx={{display : {md : 'block' , xs : 'none'}}}>
+      <CanvasContainer style={{  position : 'absolute' , backgroundColor : '#000' }}>
+      <TopSection/>
       <Canvas>
         <Suspense fallback={null}>
-           <Earth/>
+          <Earth />
         </Suspense>
       </Canvas>
-    </Box>
-  )
+    </CanvasContainer>
+   </Box>
+  </div>
+  );
 }
-export default LoadingPage;
+
+export default App;

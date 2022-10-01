@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+@import '~antd/dist/antd.css';
+@import "./styles/Main.css";
+@import "./styles/SatSetting.css";
+@import "./styles/SatelliteList.css";
+@import "./styles/WorldMap.css";
 
 body {
   margin: 0;
